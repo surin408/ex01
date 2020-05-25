@@ -1,0 +1,128 @@
+
+# 2019/03/21 :-
+# Install Git
+  sudo apt-get install git
+
+# 2019/12/05 :-
+surin408@gmail.com / gmailsurin408
+surin408 / gmailsurin408
+
+
+# สอน Git ตอนที่ 1 - รู้จัก Git และ Version Control System สำหรับจัดการไฟล์และซอร์สโค้ด :-
+https://www.youtube.com/watch?v=nQdR_csFOso
+
+
+git --version
+git config --list
+git config --global --list
+
+git config --global user.name "surin408"
+git config --global user.email "surin408@gmail.com"
+
+git config user.name "surin408"
+git config user.email "surin408@gmail.com"
+
+
+git init
+
+
+git status                  1
+git add <file name>         2
+git add .  (all)            3
+git commit -m "message"     4
+
+
+git log
+git clean -n (list untrack file)
+git clean -df (delete untrack file)
+git reset --hard <commit id>  (at lease 6 digits) recall old version
+
+
+git branch
+git branch --all
+git branch <new branch>             (create new branch)
+git branch --delete <branch name>
+git checkout <branch> / <commit id> (switch to <branch>)
+
+git reset --hard <commit id>  (goback to old version)
+git reset --soft <commit id>  (goback to after added, stage)
+git reset --mixed <commit id> (goback to before add, untrack)
+
+git merge --no-ff <branch name> (no-ff = no fast forward)
+git diff <branch name to compair>
+.gitignore
+
+
+Remote Repository
+git remote add origin <URL> 
+git remote -v
+git push origin master
+git push origin develop
+git push --delete origin develop
+
+# download code from host to local & merge
+git fetch --all
+git fetch origin master
+
+git merge
+git merge origin/master
+
+# fetch & merge :-
+git pull <remote> <branch>
+git pull origin master
+
+git clone <URL> 
+
+สอน git เบื้องต้น: การใช้ git, github ร่วมกับ Visual Studio Code
+https://www.youtube.com/watch?v=6QhuFYVWpFM
+
+แนะนำการใช้งาน Git เบื้องต้น
+https://www.youtube.com/watch?v=8YJJbHkbdHg
+
+
+
+example :-
+
+# create a new repository on the command line :-
+
+echo "# test2" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+
+git remote add origin https://github.com/surin408/test2.git
+git push -u origin master
+
+
+# push an existing repository from the command line :-
+
+git remote add origin https://github.com/surin408/test2.git
+git push -u origin master
+
+
+
+
+
+# 2919/08 :-
+
+# 11 :-
+
+# Git-Cola :-
+  - sudo apt-get install git-cola -y
+# Giggle
+  - sudo apt-get install giggle -y
+
+# สอน Git ตอนที่1# - Intro Version Control System
+  - https://www.youtube.com/watch?v=juK3OwMIBu8&list=PLjPfp4Ph3gBrgVPZySWHZwxXSxdgOKhQ-
+
+# 10 :-
+
+# สอน Git ตอนที่ 1 - รู้จัก Git และ Version Control System สำหรับจัดการไฟล์และซอร์สโค้ด
+  - https://www.youtube.com/watch?v=nQdR_csFOso
+
+# Git – Setting up Git and respective config files
+  - https://codingbee.net/git/git-setting-up-git-and-respective-config-files
+
+# Git --fast-version-control
+  - https://git-scm.com/
+  
